@@ -1,0 +1,115 @@
+*{
+    color: rgb(0, 38, 255);
+    border-radius: 20px;
+}
+
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    background-color:rgb(25, 25, 25);
+    overflow: hidden;
+}
+#g_panel{
+    height:6rem;
+    width:100%;
+    border:2px solid white;
+}
+#d1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 33rem;
+    width: 100%;
+    border:2px solid white;
+    margin-top: 10px;
+}
+#insan{
+    margin: 5px;
+    height: 30rem;
+    width: 35%;
+    border:2px solid white;
+}
+
+#giris{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 30rem;
+    width: 65%;
+    border:2px solid white;
+}
+.dd{
+    height: 24rem;
+    width: 17rem;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bilgiler{
+    height: 5rem;
+    width: 15rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+.inpler{
+    height: 5rem;
+    width: 11rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inpler {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 190px;
+    position: relative;
+  }
+  
+  .inpler input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(0, 38, 255);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .inpler label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(0, 38, 255);
+  }
+  
+  .inpler :is(input:focus, input:valid)~label {
+    transform: translateY(-70%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color:rgb(25,25,25);
+  }
+  
+  .inpler :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
