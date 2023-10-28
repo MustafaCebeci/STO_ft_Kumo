@@ -34,6 +34,10 @@ body{
   background-color: aqua;
 }
 
+#logomuz{
+  height: 100%;
+  width: 10rem;
+}
 #buttonlar{
   height: 6rem;
   width: 26rem;
