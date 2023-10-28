@@ -1,0 +1,286 @@
+body{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color:rgb(113, 55, 189);
+    overflow: hidden;
+}
+#üst_panel{
+    height: 6rem;
+    width: 47.5rem;
+    border: 2px solid  rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#bizim_logo{
+  height: 6rem;
+  width: 12rem;
+  background-color: rgb(247, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+#bosluk{
+  height: 6rem;
+  width: 5rem;
+  background-color: aqua;
+}
+
+#buttonlar{
+  height: 6rem;
+  width: 26rem;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#gece_gündüz{
+  height: 6rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*gece gündüz*/
+.toggle {
+  background-color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+  line-height: 1;
+}
+
+.input {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+}
+
+.icon--sun {
+  transform: scale(0);
+}
+
+#switch:checked + .icon--moon {
+  transform: rotate(360deg) scale(0);
+}
+
+#switch:checked ~ .icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
+
+
+#d1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+/*kartlar*/
+.myCard {
+    margin: 10px;
+    background-color: transparent;
+    width: 15rem;
+    height:25rem;
+    perspective: 1000px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide,
+  .backSide {
+    background-color:rgb(200, 200, 200);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+  }
+  
+  .frontSide,
+  .frontSide::before {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.backSide,
+.backSide::before {
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  .backSide {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide::before,
+  .backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-500%, -500%);
+    content: '';
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0.3;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }
+
+.resim{
+    height: 16rem;
+}
+
+.inpler{
+    height: 3rem;
+    width: 12rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inpler {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 190px;
+    position: relative;
+  }
+  
+  .inpler input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .inpler label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+  }
+  
+  .inpler :is(input:focus, input:valid)~label {
+    transform: translateY(-70%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color:rgb(200, 200, 200);
+  }
+  
+  .inpler :is(input:focus, input:valid) {
+    border-color: rgb(0, 0, 0);
+  }
+/*giris buttonları*/
+.btn {
+    width: 12rem;
+    margin-bottom: 2rem;
+    font-size: 18px;
+    color: #000000;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .btn:focus,
+  .btn:hover {
+    color: #000000;
+  }
+  
+  .btn:focus:after,
+  .btn:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .btn:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
