@@ -135,6 +135,10 @@ transform: scale(1) rotate(360deg);
   transform: rotateY(180deg);
 }
 
+.frontSide{
+  user-select: none;
+}
+
 .frontSide,
 .backSide {
   position: absolute;

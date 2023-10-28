@@ -129,7 +129,11 @@ body{
   .myCard:hover .innerCard {
     transform: rotateY(180deg);
   }
-  
+
+  .frontSide{
+    user-select: none;
+  }
+
   .frontSide,
   .backSide {
     background-color:rgb(200, 200, 200);
