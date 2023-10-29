@@ -1,5 +1,5 @@
 *{
-  transition: background 200ms;
+  transition: background 500ms;
 }
 
 body{
@@ -24,33 +24,34 @@ body{
 
 #bizim_logo{
   height: 6rem;
-  width: 12rem;
-  background-color: rgb(247, 0, 0);
+  width: 10rem;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-}
-#bosluk{
+  }
+  
+  #logomuz{
+    height: 100%;
+    width: 8rem;
+  }
+  
+  #bosluk{
   height: 6rem;
-  width: 5rem;
-  background-color: aqua;
-}
-
-#logomuz{
-  height: 100%;
   width: 10rem;
-}
-#buttonlar{
+  background-color: aqua;
+  }
+  
+  #buttonlar{
   height: 6rem;
-  width: 26rem;
+  width: 24rem;
   background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-}
+  }
 
 #gece_gündüz{
   height: 6rem;
