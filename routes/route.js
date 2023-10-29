@@ -10,5 +10,7 @@ router.use(bodyParser.urlencoded({ extended: true }));
 router.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"../html/index.html"));
 });
-
+router.post("/",(req,res)=>{
+    res.sendFile(path.join(__dirname,"../html/index.html"));
+});
 module.exports = router;
