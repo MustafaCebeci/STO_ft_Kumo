@@ -10,6 +10,9 @@ body{
   background-color:rgb(25,25,25);
   overflow: hidden;
 }
+
+
+
 #üst_panel{
   height: 6rem;
   width: 47.5rem;
@@ -22,13 +25,13 @@ body{
 }
 
 #bizim_logo{
-height: 6rem;
-width: 10rem;
-border-radius: 20px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 3rem;
+  height: 6rem;
+  width: 10rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
 }
 
 #logomuz{
@@ -38,32 +41,38 @@ font-size: 3rem;
 }
 
 #bosluk{
-height: 6rem;
-width: 10rem;
-background-color: aqua;
+  height: 6rem;
+  width: 10rem;
+  background-color: aqua;
 }
 
 #buttonlar{
-height: 6rem;
-width: 24rem;
-background-color: blue;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
+  height: 6rem;
+  width: 24rem;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 #gece_gündüz{
-height: 6rem;
-width: 5rem;
-display: flex;
-justify-content: center;
-align-items: center;
+  height: 6rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+#d1{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 /*gece gündüz*/
 .toggle {
-background-color: #fff;
+  background-color: #fff;
 width: 56px;
 height: 56px;
 border-radius: 50%;
@@ -102,13 +111,6 @@ transform: scale(1) rotate(360deg);
 }
 
 
-#d1{
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
 /*kartlar*/
 .myCard {
   margin: 10px;
@@ -298,4 +300,25 @@ transform: scale(1) rotate(360deg);
 }
 input{
   color:white;
+}
+
+
+@media screen and (max-width:720px) {
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+  }
+  #üst_panel{
+    height: 600px;
+    width: 100px;
+    background-color: black;
+  }
+  #d1{
+    display: flex;
+    flex-direction: column;
+  }
 }
