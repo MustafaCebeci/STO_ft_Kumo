@@ -14,8 +14,7 @@ body{
 
 
 #üst_panel{
-  height: 6rem;
-  width: 47.5rem;
+  flex: 1;
   border: 2px solid  rgb(111, 0, 255);
   border-radius: 20px;
   display: flex;
@@ -25,8 +24,7 @@ body{
 }
 
 #bizim_logo{
-  height: 6rem;
-  width: 10rem;
+  flex: 1;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -35,20 +33,20 @@ body{
 }
 
 #logomuz{
-  height: 100%;
-  width: 8rem;
+  height:auto;
+  width:8rem;
   cursor: pointer;
 }
 
 #bosluk{
-  height: 6rem;
-  width: 10rem;
+  flex: 1;
+  height: 100%;
   background-color: aqua;
 }
 
 #buttonlar{
-  height: 6rem;
-  width: 24rem;
+  flex: 3;
+  height: 100%;
   background-color: blue;
   display: flex;
   justify-content: center;
@@ -57,8 +55,8 @@ body{
 }
 
 #gece_gündüz{
-  height: 6rem;
-  width: 5rem;
+  flex: 1;
+  margin-right: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,8 +64,8 @@ body{
 #d1{
   margin-top: 10px;
   display: flex;
+  flex: 9;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
 }
 /*gece gündüz*/
@@ -306,10 +304,12 @@ input{
 @media screen and (max-width:720px) {
   body{
     display: flex;
-    background-color: white;
-    flex-direction: column;
+    background-color: rgb(40, 32, 32);
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   #üst_panel{
+    display: flex;
     flex: 1;
     background-color: black;
   }
@@ -319,5 +319,17 @@ input{
     flex-direction: column;
     justify-content: center;
     align-self: center;
+  }
+  #bizim_logo{
+    display: flex;
+    flex: 1;
+  }
+  #logomuz{
+    height: 6rem;
+    width: 6rem;
+  }
+  #bosluk{
+    display: flex;
+    flex: 1;
   }
 }
